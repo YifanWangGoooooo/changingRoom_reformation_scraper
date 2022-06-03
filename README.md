@@ -13,5 +13,5 @@ Run the scraping commands below to easily start the product fetching.
 -   % python manage.py runserver 
 -   http://127.0.0.1:8000/
 
-### Contributors
-- Yifan Wang
+### Contributor
+- Yifan Wang(yw3581)
