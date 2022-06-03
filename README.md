@@ -1,29 +1,17 @@
-Squirrel Tracker
+## Reformation Scraper for Changing Room
 
-What is it?
+### What is it?
 
-Squirrel Tracker is a web app allowing Mr Joffrey Hosencratz to track down all the known squirrels and manage related data. The app is initialized with data from the 2018 Central Park Squirrel Census, including location coordinates, age, primary and secondary fur color, elevation, activities, communications, and interations between squirrels and with humans.
+This scraper is a web app using Selenium to fetch all the product information on https://www.reformation.com. It can fetch and display each product's url, name, category, price, description, color, size and their avalibility, image urls. Now it is set to crawl products under a specific category such as clothing or shoes with 4 times of scrolling for testing but the logic behind it is complete. It is also connected to a AWS RDS database.
 
-Main Features
+### Main Features
+1. **Scraping**<br>
+Run the scraping commands below to easily start the product fetching.
+-  % python manage.py scrape_data 'https://www.thereformation.com/clothing'
+    
+2. **Overview of all the Products Fetched**<br>
+-   % python manage.py runserver 
+-   http://127.0.0.1:8000/
 
-Import and export data
-Run the import and export commands below to easily import and export data in csv format.
-$ python manage.py import_squirrel_data /path/to/file.csv
-$ python manage.py export_squirrel_data /path/to/file.csv
-Squirrel data management
-Browse and update all the known squirrel sightings and add in new ones.
-
-Mapping
-A map that displays the precise location of sightings where squirrels were spotted.
-
-Statistics
-View statistics drawn from the dataset to study squirrel behavior.
-
-Where to get it
-
-A link to the server: https://tools-for-analytics-308206.df.r.appspot.com/
-
-Contributors
-
-Project Group 28, Section 1
-UNIs: [yw3581, yh3308]
+### Contributors
+- Yifan Wang
